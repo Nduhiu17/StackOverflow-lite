@@ -6,6 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Registration</title>
     <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/registration.css">
+</head>
+
 </head>
 <body>
     <div class="header">
@@ -14,23 +17,34 @@
                 <div class="logo-header">
                     <p class="p-logo">Stack Overflow Lite</p>
                 </div>
-                <div class="search-header">
-                    <form id="search-form" class="search-form">
-                        <input type="text" placeholder="search...">
-                    </form>
-                </div>
             </div>
             <div class="right-sideheader">
-                <div class="login-header">
-                    login
-                </div>
-                <div class="logout-header">
-                    logout
-                </div>
-                <div class=" add-question-header">
-                    Ask a Question
+                <div class=" login-header">
+                    Login
                 </div>
             </div>
+        </div>
+    </div>
+    <div class="reg-main-body-container">
+        <div class="reg-left-main-body">
+
+        </div>
+        <div class="reg-main-body">
+            <div class="reg-title">
+                <h2>Register</h2>
+            </div>
+            <div-reg-form-div>
+                <input type="text" class="username" placeholder="username"  id="name">
+                <input type="text" class="email" placeholder="email"  id="email">
+                <input type="password" class="password" placeholder="password"  id="password">
+                <input type="password" class="repeat-password" placeholder="repeat password"  id="repeat-password">
+                <button id="reg-submit-button" class="reg-submit-button">Register</button>
+            </div-reg-form-div>
+        </div>
+        <div class="reg-right-main-body">
+        </div>
+        <div class="footer-reg">
+             <p class="p-footer">&copy; 2018 StackOverflow-Lite</p>
         </div>
     </div>
 </body>

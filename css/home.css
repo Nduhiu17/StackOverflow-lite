@@ -66,13 +66,16 @@ html {
  }
 
  .search-form{
-    padding: 20px;
+    padding:12px;
  }
 
  input[type="text"] {
-    padding: 5px;
-    border-radius: 29px !important;
+    border-radius: 8px !important;
+    width: 100%;
+    padding: 6px 0px;
+    margin: 10px;
 }
+
 
 .main-container{
     display: flex;
