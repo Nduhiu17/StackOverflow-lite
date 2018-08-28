@@ -78,3 +78,28 @@ html {
     border-radius: 29px !important;
 }
 
+.main-container{
+    display: flex;
+    background: #fff;
+    flex-direction: row;
+}
+
+.middle-body-container{
+    width: 60%;
+    min-height: 100%
+}
+
+.left-body-container{
+    width: 20%;
+}
+
+.footer-home{
+    background-color: #fff;
+    text-align: center;
+    padding: 0px;
+    color: #999;
+    position:absolute;
+    bottom:0;
+    width:100%;
+}
+
