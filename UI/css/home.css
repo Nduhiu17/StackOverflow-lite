@@ -173,3 +173,21 @@ h3{
     background-color: #E1ECF4;
     padding: 1px;
 }
+
+.right-main-bar-contents{
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+}
+
+.right-main-bar-contents-bodies{
+    display: flex;
+    flex-direction: column;
+}
+
+.right-main-bar-content-body{
+    word-wrap: break-word;
+    padding: 2px;
+    color: #07C;
+    margin-bottom:  0.2em;
+}
