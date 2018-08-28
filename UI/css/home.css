@@ -1,0 +1,257 @@
+body{
+    display: block;
+    margin: 0;
+}
+
+html {
+    font-family: ProximaNova,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+
+.header{
+    display: flex;
+    background-color: #39f;
+}
+
+.left-sideheader{
+    display: flex;
+    flex-direction: row;
+    justify-content:flex-start;
+}
+
+.right-sideheader{
+    display: flex;
+    flex-direction: row;
+    justify-content:flex-end;
+    padding-top: 14px;
+    padding-right: 12px
+}
+
+.logo-header{
+   margin: 8px;
+   color: #fff;
+   padding: 4px;
+}
+
+.login-header{
+    margin: 8px;
+    color: #fff;
+    padding: 4px;
+ }
+
+ .logout-header{
+    margin: 8px;
+    color: #fff;
+    padding: 4px;
+ }
+
+ .add-question-header{
+    margin: 8px;
+    color: #fff;
+    padding: 4px;
+    border: 2px solid white;
+    border-radius: 15px;
+    margin-bottom: 9%;
+ }
+ 
+ 
+ .container-header{
+     display: flex;
+     width: 100%;
+     flex-direction: row;
+     justify-content: space-between;
+  
+ }
+
+ .search-form{
+    padding: 20px;
+ }
+
+ input[type="text"] {
+    padding: 5px;
+    border-radius: 29px !important;
+}
+
+.main-container{
+    display: flex;
+    background: #fff;
+    flex-direction: row;
+}
+
+.middle-body-main{
+    height: 80vh;
+    overflow-y: scroll;
+}
+.middle-body-container{
+    width: 60%;
+    border-left: 1px solid #e5e5e5;
+    border-right: 1px solid #e5e5e5;
+
+}
+
+.left-body-container{
+    width: 20%;
+}
+
+.right-body-container{
+    width: 20%;
+}
+
+.footer-home{
+    background-color: #39f; 
+    text-align: center;
+    padding: 0px;
+    color: #fff;
+    bottom: 0;
+    position: fixed;
+    width:100%;
+}
+
+.left-container {
+    padding-left: 40px;
+}
+
+.home-button{
+    border-bottom: 1px solid #e5e5e5;
+    color: #222;
+    margin-right: 40px;
+}
+
+.left-sub-bars{
+    color: #999;
+}
+
+.questions-summary{
+    display: flex;
+    flex-direction: column;
+    padding: 1px;
+    margin-left: 20px;
+    margin-right: 10px;
+}
+
+.question-title{
+    color: #005999;
+}
+
+h3{
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.question-content{
+    padding: 0;
+    padding-bottom: 5px;
+    margin: 0;
+    color: #3b4045;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    word-break: break-word;
+    font: inherit;
+    font-size: 100%;
+    vertical-align: baseline;
+}
+
+.question-tags{
+    display: flex;
+    flex-direction: row;
+}
+
+.question-author{
+    color: #39739d;
+    background-color: #E1ECF4;
+    margin-right: 5px;
+    padding: 1px;
+}
+
+.question-creation-date{
+    color: #39739d;
+    background-color: #E1ECF4;
+    margin-right: 5px;
+    padding: 1px;
+}
+
+.question-answers{
+    color: #39739d;
+    background-color: #E1ECF4;
+    padding: 1px;
+}
+
+.right-main-bar-contents{
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+}
+
+.right-main-bar-contents-bodies{
+    display: flex;
+    flex-direction: column;
+}
+
+.right-main-bar-content-body{
+    word-wrap: break-word;
+    padding: 2px;
+    color: #07C;
+    margin-bottom:  0.2em;
+}
+
+@media (max-width: 824px) {
+	.container-header{
+        display: flex;
+        flex-direction: column;
+       
+    }
+}
+
+@media (max-width: 824px) {
+	.right-sideheader{
+        flex-direction: row;
+        justify-content:center;
+    }
+}
+
+@media (max-width: 824px) {
+	.left-sideheader{
+        flex-direction: row;
+        justify-content:center;
+    }
+}
+
+@media (max-width: 640px) {
+	.main-container {
+        display: flex;
+        flex-direction: column;
+        justify-content:flex-end;
+    }
+}
+
+@media (max-width: 640px) {
+	.left-container {
+        display: flex;
+        flex-direction: row;
+        justify-content:space-around;
+        margin-left: 100px;
+    }
+}
+
+@media (max-width: 640px) {
+	.left-sub-bars {
+        display: flex;
+        flex-direction: row;
+        justify-content:space-around;
+        padding: 5px;
+    }
+}
+
+@media (max-width: 640px) {
+	.my-questions {
+        padding: 2px;
+        margin-right: 15px;
+    }
+}
+
+
+
+
+my-questions
