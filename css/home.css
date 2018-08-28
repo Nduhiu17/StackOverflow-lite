@@ -95,6 +95,10 @@ html {
     width: 20%;
 }
 
+.right-body-container{
+    width: 20%;
+}
+
 .footer-home{
     background-color: #39f; 
     text-align: center;
@@ -191,3 +195,63 @@ h3{
     color: #07C;
     margin-bottom:  0.2em;
 }
+
+@media (max-width: 824px) {
+	.container-header{
+        display: flex;
+        flex-direction: column;
+       
+    }
+}
+
+@media (max-width: 824px) {
+	.right-sideheader{
+        flex-direction: row;
+        justify-content:center;
+    }
+}
+
+@media (max-width: 824px) {
+	.left-sideheader{
+        flex-direction: row;
+        justify-content:center;
+    }
+}
+
+@media (max-width: 640px) {
+	.main-container {
+        display: flex;
+        flex-direction: column;
+        justify-content:flex-end;
+    }
+}
+
+@media (max-width: 640px) {
+	.left-container {
+        display: flex;
+        flex-direction: row;
+        justify-content:space-around;
+        margin-left: 100px;
+    }
+}
+
+@media (max-width: 640px) {
+	.left-sub-bars {
+        display: flex;
+        flex-direction: row;
+        justify-content:space-around;
+        padding: 5px;
+    }
+}
+
+@media (max-width: 640px) {
+	.my-questions {
+        padding: 2px;
+        margin-right: 15px;
+    }
+}
+
+
+
+
+my-questions
