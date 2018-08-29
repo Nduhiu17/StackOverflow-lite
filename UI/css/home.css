@@ -142,16 +142,8 @@ h3{
 }
 
 .question-content{
-    padding: 0;
     padding-bottom: 5px;
-    margin: 0;
     color: #3b4045;
-    overflow-wrap: break-word;
-    word-wrap: break-word;
-    word-break: break-word;
-    font: inherit;
-    font-size: 100%;
-    vertical-align: baseline;
 }
 
 .question-tags{
@@ -164,6 +156,7 @@ h3{
     background-color: #E1ECF4;
     margin-right: 5px;
     padding: 1px;
+    width: fit-content;
 }
 
 .question-creation-date{
@@ -171,12 +164,14 @@ h3{
     background-color: #E1ECF4;
     margin-right: 5px;
     padding: 1px;
+    width: fit-content;
 }
 
 .question-answers{
     color: #39739d;
     background-color: #E1ECF4;
     padding: 1px;
+    width: fit-content;
 }
 
 .right-main-bar-contents{
