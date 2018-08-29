@@ -1,0 +1,19 @@
+.main-container-profile {
+    display: flex;
+    background: #fff;
+    flex-direction: row;
+}
+
+.middle-body-container-profile {
+    width: 70%;
+    border-left: 1px solid #e5e5e5;
+    border-right: 1px solid #e5e5e5;
+}
+
+.right-body-container-profile {
+    width: 15%;
+}
+
+.left-body-container-profile {
+    width: 15%;
+}
