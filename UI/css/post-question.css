@@ -29,3 +29,7 @@ textarea#question-body {
     flex-direction: column;
     padding: 5px;
 }
+
+p.p-footer {
+    padding-top: 15px;
+}
