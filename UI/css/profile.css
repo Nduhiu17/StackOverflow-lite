@@ -17,3 +17,91 @@
 .left-body-container-profile {
     width: 15%;
 }
+
+.top-body-profile{
+    display: flex;
+    flex-direction: row;
+    padding: 20px;
+    justify-content: space-between;
+}
+
+.user-details-profile{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.bottom-body-profile{
+    display: flex;
+    flex-direction: row;
+}
+
+.profile-image{
+    width: 80px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    align-content: center;
+}
+
+.profile-username{
+    color: #39f;
+}
+
+.profile-email{
+    color: #39f;
+}
+
+p.p-photo {
+    padding: 22px;
+    color: #999;
+}
+
+.number-questions{
+    height: 80px;
+    width: 80px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    align-content: center;
+}
+
+.number-answers{
+    height: 80px;
+    width: 80px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    align-content: center;
+}
+
+
+
+.p-number-title-profile{
+    color: #999;
+}
+
+.number-of-questions-profile{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+
+p.num {
+    padding: 17%;
+    padding-left: 45%;
+    font-weight: 900;
+    color: #39f;
+}
+
+.num-answers{
+    padding: 17%;
+    padding-left: 35%;
+    font-weight: 900;
+    color: #39f;
+}
+
+p.p-number-title--answers {
+    color: #999;
+}
