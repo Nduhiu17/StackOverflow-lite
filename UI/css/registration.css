@@ -17,20 +17,19 @@
 }
 
 input[type="password"] {
-    padding: 5px;
-    border-radius: 8px !important;
     width: 100%;
-    padding: 6px 0px;
-    margin: 10px;
+    padding: 7px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
 }
 
 .reg-submit-button{
     background-color: #39f;
     border: 0 none;
-    padding: 12px 18px;
     border-radius: 8px;
     color: #fff;
-    padding: 12px 22px;
+    padding: 8px 20px;
 }
 
 .footer-reg{
@@ -43,12 +42,6 @@ input[type="password"] {
     width:100%;
 }
 
-
-.login-header {
-    margin: 8px;
-    color: #fff;
-    padding: 4px;
-    border: 2px solid white;
-    border-radius: 15px;
-    margin-bottom: 26%;
+div-reg-form-div > input,button {
+    margin: 10px;
 }

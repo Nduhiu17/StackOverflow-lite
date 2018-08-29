@@ -5,7 +5,7 @@ body{
 
 html {
     font-family: ProximaNova,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
-    font-size: 15px;
+    font-size: 13px;
     line-height: 1.5;
 }
 
@@ -33,6 +33,7 @@ html {
    margin: 8px;
    color: #fff;
    padding: 4px;
+   margin-left: 25px;
 }
 
 .login-header{
@@ -47,14 +48,14 @@ html {
     padding: 4px;
  }
 
- .add-question-header{
+ .add-question-header {
     margin: 8px;
     color: #fff;
-    padding: 4px;
-    border: 2px solid white;
+    padding: 4px 12px 4px 12px;
+    border: 1px solid white;
     border-radius: 15px;
     margin-bottom: 9%;
- }
+}
  
  
  .container-header{
@@ -66,16 +67,20 @@ html {
  }
 
  .search-form{
-    padding:12px;
+    padding:20px;
  }
 
- input[type="text"] {
-    border-radius: 8px !important;
+input[type=text], select, textarea {
     width: 100%;
-    padding: 6px 0px;
-    margin: 10px;
+    padding: 7px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
 }
 
+.header-search{
+    border-radius: 28px !important;;
+}
 
 .main-container{
     display: flex;
@@ -83,10 +88,6 @@ html {
     flex-direction: row;
 }
 
-.middle-body-main{
-    height: 80vh;
-    overflow-y: scroll;
-}
 .middle-body-container{
     width: 60%;
     border-left: 1px solid #e5e5e5;
@@ -102,16 +103,13 @@ html {
     width: 20%;
 }
 
-.footer-home{
-    background-color: #39f; 
+.footer-home {
+    background-color: #39f;
     text-align: center;
-    padding: 0px;
     color: #fff;
-    bottom: 0;
-    position: fixed;
-    width:100%;
+    width: 100%;
+    height: 4em;
 }
-
 .left-container {
     padding-left: 40px;
 }
@@ -139,7 +137,7 @@ html {
 }
 
 h3{
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 400;
 }
 
@@ -254,7 +252,30 @@ h3{
     }
 }
 
+@media (max-width: 630px) {
+	.middle-body-container {
+        width: 100%
+    }
+    .right-body-container {
+        width: 100%;
+    }
+}
 
 
 
-my-questions
+.main-container > div {
+    padding: 20px;
+}
+
+@media (max-width: 640px){
+.main-container > div {
+    display: flex;
+    width: 100% !important;
+
+    } 
+}
+
+
+p.p-footer-home {
+    padding-top: 22px;
+}
