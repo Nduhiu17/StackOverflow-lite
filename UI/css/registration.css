@@ -49,3 +49,7 @@ div-reg-form-div > input,button {
 a {
     all: unset;
 }
+
+a:hover {
+    color: #1284ad;
+}

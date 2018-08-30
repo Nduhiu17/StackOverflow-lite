@@ -59,3 +59,7 @@ textarea#answer-body-post{
 a {
     all: unset;
 }
+
+a:hover {
+    color: #1284ad;
+}
