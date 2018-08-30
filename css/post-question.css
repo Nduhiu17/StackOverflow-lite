@@ -33,3 +33,7 @@ textarea#question-body {
 p.p-footer {
     padding-top: 15px;
 }
+
+a {
+    all: unset;
+}
