@@ -55,3 +55,7 @@ textarea#answer-body-post{
     display: flex;
     justify-content: flex-end;
 }
+
+a {
+    all: unset;
+}
