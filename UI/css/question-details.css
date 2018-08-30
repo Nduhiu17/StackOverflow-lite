@@ -77,3 +77,11 @@ a:hover {
     padding: 12px 5px;
 }
 
+.update-question-button {
+    background-color: #39f;
+    border: 0 none;
+    border-radius: 8px;
+    color: #fff;
+    padding: 12px 5px;
+}
+
