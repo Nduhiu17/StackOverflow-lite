@@ -274,14 +274,11 @@ p.p-footer-home {
     padding-top: 22px;
 }
 
-.auto {
-    cursor: auto;
-}
 a {
     all: unset;
 }
 
 a:hover {
-    cursor: pointer;
+    color: #1284ad;
 }
 
