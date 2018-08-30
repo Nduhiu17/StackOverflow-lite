@@ -33,7 +33,6 @@
 }
 
 textarea#answer-body-post{
-    width: 85%;
     line-height: 1.3;
     padding: 9px;
     tab-size: 4;
@@ -64,7 +63,7 @@ a:hover {
     cursor: pointer;
 }
 
-/* .update-question-button {
+.update-question-button {
     background-color: #39f;
     border: 0 none;
     border-radius: 8px;
@@ -78,4 +77,9 @@ a:hover {
     border-radius: 8px;
     color: #fff;
     padding: 12px 5px;
-} */
+}
+
+.post-question-button-div{
+    display: flex;
+    justify-content: space-between;
+}
