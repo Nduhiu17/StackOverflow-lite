@@ -208,6 +208,7 @@ a {
 }
   
 a:hover {
-    color: #1284ad;
+    text-decoration: underline;
+    cursor: pointer;
 }
 
