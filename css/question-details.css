@@ -63,3 +63,19 @@ a {
 a:hover {
     cursor: pointer;
 }
+
+/* .update-question-button {
+    background-color: #39f;
+    border: 0 none;
+    border-radius: 8px;
+    color: #fff;
+    padding: 12px 5px;
+}
+
+.delete-question-button {
+    background-color: red;
+    border: 0 none;
+    border-radius: 8px;
+    color: #fff;
+    padding: 12px 5px;
+} */
