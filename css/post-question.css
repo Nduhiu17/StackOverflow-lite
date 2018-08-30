@@ -37,3 +37,8 @@ p.p-footer {
 a {
     all: unset;
 }
+
+a:hover {
+    color: #1284ad;
+}
+
