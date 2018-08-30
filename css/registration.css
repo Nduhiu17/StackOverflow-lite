@@ -45,3 +45,11 @@ input[type="password"] {
 div-reg-form-div > input,button {
     margin: 10px;
 }
+
+a {
+    all: unset;
+}
+
+a:hover {
+    color: #1284ad;
+}

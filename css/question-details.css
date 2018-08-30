@@ -55,3 +55,11 @@ textarea#answer-body-post{
     display: flex;
     justify-content: flex-end;
 }
+
+a {
+    all: unset;
+}
+
+a:hover {
+    color: #1284ad;
+}

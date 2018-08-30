@@ -26,8 +26,8 @@
 
 .user-details-profile {
     display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
+    /* flex-direction: column;
+    justify-content: flex-start; */
     width: 50%;
 }
 
@@ -180,7 +180,7 @@ img{
     background-color: #fff;
     border: 1px solid #dee2e6;
     border-radius: .25rem;
-    max-width: 30%;
+    max-width: 100%;
 }
 
 .body-left-profile {
@@ -188,3 +188,26 @@ img{
     width: 50%;
     justify-content: space-evenly;
 }
+
+.profile-image {
+    width: 35%;
+}
+
+.profile-contacts {
+    padding: 29px;
+    font-weight: 900;
+}
+
+
+.h2-profile {
+    margin: 20px;
+}
+
+a {
+    all: unset;
+}
+  
+a:hover {
+    color: #1284ad;
+}
+
