@@ -24,6 +24,14 @@ class Question:
         MOCK_DATABASE[ "questions" ].append(self)
         return self.json_dumps()
 
+    @classmethod
+    def get_all(cls):
+        all_questions = MOCK_DATABASE[ 'questions' ]
+        get_all_json = [ ]
+        for item in all_questions:
+            get_all_json.append(item.json_dumps())
+        return get_all_json
+
     def json_dumps(self):
         #method to return a json object from the question details
         obj = {

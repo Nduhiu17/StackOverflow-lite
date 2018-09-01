@@ -5,9 +5,9 @@ from config import TestingConfig
 
 
 class TestQuestion(unittest.TestCase):
-
+    '''class to test a question'''
     def setUp(self):
-
+        #setting up configurations for testing
         self.app = app
         self.app.config.from_object(TestingConfig)
         self.client = self.app.test_client()
@@ -17,6 +17,12 @@ class TestQuestion(unittest.TestCase):
         pass
 
     def test_init(self):
+        #test that a question is initialized
         self.new_question = Question(title="how to init python",body="how to init python how to init python how to init python")
         self.assertTrue(type(self.new_question.id), int)
         self.assertEqual(type(self.new_question), Question)
+
+    def test_get_all_questions(self):
+        #test can get all questions
+        response = self.client.get('/api/v1/questions', content_type='application/json')
+        self.assertEqual(response.status_code, 200)
