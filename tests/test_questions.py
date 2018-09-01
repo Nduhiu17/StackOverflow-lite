@@ -42,3 +42,11 @@ class TestQuestion(unittest.TestCase):
         response = self.client.post('api/v1/questions', data=json.dumps(new_question),
                                     headers={'Content-Type': 'application' '/json'})
         self.assertEqual(response.status_code, 400)
+
+    def test_post_invalid_body(self):
+        #test cant post with an invalid body
+        new_question = {'title': 'error sit voluptatem accusantium doloremque laudantium',
+                        'body': 'short body'}
+        response = self.client.post('api/v1/questions', data=json.dumps(new_question),
+                                    headers={'Content-Type': 'application' '/json'})
+        self.assertEqual(response.status_code, 400)
