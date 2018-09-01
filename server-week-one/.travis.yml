@@ -1,0 +1,28 @@
+#Prgramming language used
+language: python
+#Language version
+python:
+  - "3.6"
+
+
+before_script:
+  - psql -c 'create database jobs_test;' -U postgres
+  - curl -L https://codeclimate.com/downloads/test-reporter/test-reporter-latest-linux-amd64 > ./cc-test-reporter
+  - curl -L https://codeclimate.com/downloads/test-reporter/test-reporter-latest-linux-amd64 > ./cc-test-reporter
+  - chmod +x ./cc-test-reporter
+
+#installing requirements on travis
+install:
+- pip install -r requirements.txt
+- pip install coveralls
+- pip install codeclimate-test-reporter
+
+# command to run tests
+script:
+  - pytest
+  - coverage run -m pytest  && coverage report
+#code to run after tests
+after_success:
+  - coverage run -m pytest
+  - coveralls
+  - codeclimate-test-reporter
