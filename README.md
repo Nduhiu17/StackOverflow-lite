@@ -1,20 +1,10 @@
 ### StackOverflow - Lite
 [![Build Status](https://travis-ci.org/Nduhiu17/StackOverflow-lite.svg?branch=develop)](https://travis-ci.org/Nduhiu17/StackOverflow-lite)
-[![Coverage Status](https://coveralls.io/repos/github/Nduhiu17/StackOverflow-lite/badge.svg?branch=ch-continues-integration-160216833)](https://coveralls.io/github/Nduhiu17/StackOverflow-lite?branch=ch-continues-integration-160216833)
+[![Coverage Status](https://coveralls.io/repos/github/Nduhiu17/StackOverflow-lite/badge.svg?branch=develop)](https://coveralls.io/github/Nduhiu17/StackOverflow-lite?branch=develop)
 [![Maintainability](https://api.codeclimate.com/v1/badges/9d8c69ee2f75b6891e74/maintainability)](https://codeclimate.com/github/Nduhiu17/StackOverflow-lite/maintainability)
+
 #### Description
 StackOverflow-lite is a platform where people can ask questions and provide answers. 
-
-#### Features
-- Users can create an account and log in.
-- Users can post questions.
-- Users can delete the questions they post.
-- Users can post answers.
-- Users can view the answers to questions.
-- Users can accept an answer out of all the answers to his/her question as the   preferred answer. 
-- Users can fetch all questions he/she has ever asked on the platform
-- Users can search for questions on the platform
-- Users can view questions with the most answers.
 
 #### Development
 The templates design have been using HTML and CSS3 with Flex box technology.
