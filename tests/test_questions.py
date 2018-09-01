@@ -34,3 +34,11 @@ class TestQuestion(unittest.TestCase):
         response = self.client.post('api/v1/questions', data=json.dumps(new_question),
                                     headers={'Content-Type': 'application' '/json'})
         self.assertEqual(response.status_code, 201)
+
+    def test__post_invalid_title(self):
+        #test cant post with an invalid title
+        new_question = {'title': 'shotitle',
+                        'body': 'error sit voluptatem accusantium doloremque laudantiumerror sit voluptatem accusantium doloremque laudantium'}
+        response = self.client.post('api/v1/questions', data=json.dumps(new_question),
+                                    headers={'Content-Type': 'application' '/json'})
+        self.assertEqual(response.status_code, 400)
