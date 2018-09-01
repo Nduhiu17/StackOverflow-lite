@@ -1,4 +1,7 @@
 ### StackOverflow - Lite
+[![Build Status](https://travis-ci.org/Nduhiu17/StackOverflow-lite.svg?branch=develop)](https://travis-ci.org/Nduhiu17/StackOverflow-lite)
+[![Coverage Status](https://coveralls.io/repos/github/Nduhiu17/StackOverflow-lite/badge.svg?branch=ch-continues-integration-160216833)](https://coveralls.io/github/Nduhiu17/StackOverflow-lite?branch=ch-continues-integration-160216833)
+[![Maintainability](https://api.codeclimate.com/v1/badges/9d8c69ee2f75b6891e74/maintainability)](https://codeclimate.com/github/Nduhiu17/StackOverflow-lite/maintainability)
 
 #### Description
 StackOverflow-lite is a platform where people can ask questions and provide answers. 
