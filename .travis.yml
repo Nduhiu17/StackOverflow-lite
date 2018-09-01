@@ -4,6 +4,10 @@ language: python
 python:
   - "3.6"
 
+  env:
+    global:
+    - SECRET_KEY=hii-inafaa-kua-siri
+
 
 before_script:
   - psql -c 'create database jobs_test;' -U postgres

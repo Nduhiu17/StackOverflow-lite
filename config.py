@@ -5,7 +5,7 @@ class Config(object):
     DEBUG = True
     TESTING = False
     CSRF_ENABLED = True
-    SECRET_KEY = os.environ[ 'SECRET_KEY' ]
+    
 
 
 class ProductionConfig(Config):
@@ -18,12 +18,13 @@ class StagingConfig(Config):
 
 
 class DevelopmentConfig(Config):
+    SECRET_KEY = os.environ[ 'SECRET_KEY' ]
     DEVELOPMENT = True
     DEBUG = True
 
 
 class TestingConfig(Config):
-    SECRET_KEY = os.environ[ 'SECRET_KEY' ]
+    SECRET_KEY = "this-is-secret"
     TESTING = True
 
 
