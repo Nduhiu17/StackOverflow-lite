@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
 source virtual/bin/activate
 export SECRET_KEY='hii-inafaa-kua-siri'
-python manage.py server
+pytest --cov-report term-missing --cov=app
