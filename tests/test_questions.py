@@ -1,3 +1,4 @@
+import json
 import unittest
 from app import app
 from app.models import Question
@@ -26,3 +27,10 @@ class TestQuestion(unittest.TestCase):
         #test can get all questions
         response = self.client.get('/api/v1/questions', content_type='application/json')
         self.assertEqual(response.status_code, 200)
+
+    def test_question_posted(self):
+        #mthod to test a question can be posted
+        new_question = {'title':'error sit voluptatem accusantium doloremque laudantium', 'body':'error sit voluptatem accusantium doloremque laudantiumerror sit volupta'}
+        response = self.client.post('api/v1/questions', data=json.dumps(new_question),
+                                    headers={'Content-Type': 'application' '/json'})
+        self.assertEqual(response.status_code, 201)
