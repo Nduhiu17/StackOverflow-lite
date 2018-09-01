@@ -1,0 +1,6 @@
+.idea/
+virtual/
+__pycache__/
+start.sh
+.coverage
+.pytest_cache/
