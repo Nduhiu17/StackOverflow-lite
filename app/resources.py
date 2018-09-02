@@ -1,7 +1,7 @@
 from flask_restplus import Resource, reqparse
 from flask import request
 
-from app.models import Question
+from app.models import Question, Answer
 
 
 class QuestionsResource(Resource):
@@ -33,3 +33,19 @@ class QuestionResource(Resource):
         if question:
             return {"status": "Success", "data": question}, 200
         return {"status":"No question with that id"},404
+
+
+class AnswerResource(Resource):
+
+    def post(self):
+        # method that post a question resource
+        parser = reqparse.RequestParser()
+        parser.add_argument('body', help='The body field cannot be blank', required=True, type=str)
+        data = parser.parse_args()
+        json_data = request.get_json(force=True)
+        if len(data[ 'body' ]) < 15:
+            return {'message': 'Ops!,the answer is too short,kindly provide an answer of more than 15 characters'}, 400
+        answer = Answer(body=request.json[ 'body' ])
+        saved_answer = answer.save()
+        return {"status": "The answer was posted successfully", "data": saved_answer}, 201
+
