@@ -11,7 +11,7 @@ api = Api(app)
 
 api.add_resource(QuestionsResource, '/api/v1/questions', '/api/v1/questions')
 api.add_resource(QuestionResource, '/api/v1/questions/<string:id>')
-api.add_resource(AnswerResource, '/api/v1/question/anwsers')
+api.add_resource(AnswerResource, '/api/v1/questions/<string:id>/anwsers')
 
 
 @app.errorhandler(404)
