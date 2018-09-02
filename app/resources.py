@@ -29,11 +29,13 @@ class QuestionsResource(Resource):
 class QuestionResource(Resource):
     def get(self,id):
         # method that gets all questions resource
-        question = Question.get_by_id(id)
-        if question:
-            return {"status": "Success", "data": question}, 200
-        return {"status":"No question with that id"},404
 
+        question = Question.get_by_id(id)
+
+        if question == None:
+            return {"status":"No question with that id"},404
+
+        return {"status": "Success", "data": question}, 200
 
 class AnswerResource(Resource):
 

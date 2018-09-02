@@ -40,7 +40,10 @@ class Question:
         retrieved_question = Question
         for item in MOCK_DATABASE['questions']:
             if str(item.id) == id:
-                return item.json_dumps()
+                retrieved_question = item.json_dumps()
+                answers = Answer.get_all_question_answers(question_id=id)
+                retrieved_question[ 'answers' ] = answers
+                return retrieved_question
 
     def json_dumps(self):
         #method to return a json object from the question details
@@ -68,6 +71,18 @@ class Answer:
         # method to save an answer
         MOCK_DATABASE[ "answers" ].append(self)
         return self.json_dumps()
+    @classmethod
+    def get_all_question_answers(cls,question_id):
+        #method to get all answers of a given questions
+        all_answers = MOCK_DATABASE['answers']
+
+        answers_retrieved = []
+
+        for answer in all_answers:
+            if answer.question_id == question_id:
+                answers_retrieved.append(answer.json_dumps())
+        return answers_retrieved
+
 
     def json_dumps(self):
         # method to return a json object from the answer details
