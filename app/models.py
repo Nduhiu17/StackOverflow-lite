@@ -38,11 +38,8 @@ class Question:
         #method to get a question by id
         retrieved_question = Question
         for item in MOCK_DATABASE['questions']:
-            if item.id == id:
-                retrieved_question= item
-                retrieved_question_json = retrieved_question.json_dumps()
-                break
-        return retrieved_question_json
+            if str(item.id) == id:
+                return item.json_dumps()
 
     def json_dumps(self):
         #method to return a json object from the question details

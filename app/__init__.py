@@ -2,14 +2,15 @@ from flask import Flask, jsonify
 from flask_restplus import Api, Resource
 
 from app.models import Question
-from app.resources import QuestionResource
+from app.resources import QuestionsResource, QuestionResource
 from config import DevelopmentConfig
 
 app = Flask(__name__)
 app.config.from_object(DevelopmentConfig)
 api = Api(app)
 
-api.add_resource(QuestionResource, '/api/v1/questions', '/api/v1/questions')
+api.add_resource(QuestionsResource, '/api/v1/questions', '/api/v1/questions')
+api.add_resource(QuestionResource,'/api/v1/questions/<string:id>')
 
 
 @app.errorhandler(404)
