@@ -37,15 +37,19 @@ class QuestionResource(Resource):
 
 class AnswerResource(Resource):
 
-    def post(self):
+    def post(self,id):
         # method that post a question resource
         parser = reqparse.RequestParser()
         parser.add_argument('body', help='The body field cannot be blank', required=True, type=str)
+        # parser.add_argument('question_id', help='The question field cannot be blank', required=True, type=str)
         data = parser.parse_args()
         json_data = request.get_json(force=True)
         if len(data[ 'body' ]) < 15:
             return {'message': 'Ops!,the answer is too short,kindly provide an answer of more than 15 characters'}, 400
-        answer = Answer(body=request.json[ 'body' ])
+        question_to_answer = Question.get_by_id(id)
+        if question_to_answer == None:
+            return {'message': 'The question with that id was not found'},404
+        answer = Answer(body=request.json[ 'body' ],question_id=id)
         saved_answer = answer.save()
         return {"status": "The answer was posted successfully", "data": saved_answer}, 201
 

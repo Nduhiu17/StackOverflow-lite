@@ -56,10 +56,11 @@ class Question:
 class Answer:
     '''Class to model an answer'''
 
-    def __init__(self, body):
+    def __init__(self, body,question_id):
         # method to initialize Answer class
         self.id = uuid.uuid4()
         self.body = body
+        self.question_id = question_id
         self.date_created = datetime.now()
         self.date_modified = datetime.now()
 
@@ -73,6 +74,7 @@ class Answer:
         ans = {
             "id": str(self.id),
             "body": self.body,
+            "question_id":self.question_id,
             "date_created": str(self.date_created),
             "date_modified": str(self.date_modified)
         }
