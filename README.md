@@ -12,6 +12,8 @@ The templates design have been using HTML and CSS3 with Flex box technology.
 
 Please click [gh-pages](https://nduhiu17.github.io/StackOverflow-lite/) to view my UI pages
 
+Please click [heroku-link](https://antony-stackoverflow-ch2.herokuapp.com) to get and test API end points on postman
+
 The following are the templates screenshots:
 
 ### 1. Registration page
