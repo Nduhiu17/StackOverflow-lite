@@ -17,7 +17,7 @@ class QuestionResource(Resource):
             return {'message': 'The length of both body should be atleast 15 characters'}, 400
         question = Question(title=request.json[ 'title' ], body=request.json[ 'body' ])
         saved_question = question.save()
-        return {"status": "The length of both title should be atleast 10 characters", "data":saved_question}, 201
+        return {"status": "The question posted successfully", "data":saved_question}, 201
 
     def get(self):
         #method that gets all questions resource
