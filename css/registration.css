@@ -14,6 +14,7 @@
 .reg-main-body-container{
     display: flex;
     flex-direction: row;
+    
 }
 
 input[type="password"] {
@@ -30,6 +31,7 @@ input[type="password"] {
     border-radius: 8px;
     color: #fff;
     padding: 8px 20px;
+    margin-left: 50%;
 }
 
 .footer-reg{
@@ -52,4 +54,17 @@ a {
 
 a:hover {
     cursor: pointer;
+}
+
+body{
+    background-image: url('q.jpeg') !important ;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.reg-title {
+    margin-left: 50%;
+    color: #39f;
+    font-size: 25px;
 }

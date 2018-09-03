@@ -1,0 +1,21 @@
+.reg-main-body2 {
+    width: 40%;
+    min-height: 50vh;
+    margin-top: 7%;
+    padding: 11px;
+
+}
+
+body {
+    background-image: url("images/questions.jpeg");
+    height: 100%; 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.reg-title {
+    margin-left: 50%;
+    color: #39f;
+
