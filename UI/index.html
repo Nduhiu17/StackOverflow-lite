@@ -5,8 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Registration</title>
-    <link rel="stylesheet" href="css/home.css">
-    <link rel="stylesheet" href="css/registration.css">
+    <link rel="stylesheet" href="css/master.css">
 </head>
 <body>
     <div class="header">
@@ -18,7 +17,6 @@
             </div>
             <div class="right-sideheader">
                 <div class=" login-header">
-                    <a href="login.html">Login</a>
                 </div>
             </div>
         </div>
@@ -27,17 +25,25 @@
         <div class="reg-left-main-body">
 
         </div>
+        
         <div class="reg-main-body">
-            <div class="reg-title">
-                <h2>Register</h2>
+            <div class="form-signin-r">
+                <div class="reg-title">
+                    <h2 class="h2-register">Register</h2>
+                </div>
+                <div-reg-form-div>
+                    <input type="text" class="username" placeholder="username"  id="name">
+                    <input type="text" class="email" placeholder="email"  id="email">
+                    <input type="password" class="password" placeholder="password"  id="password">
+                    <input type="password" class="repeat-password" placeholder="repeat password"  id="repeat-password">
+                    <div class="r-button">
+                        <button id="reg-submit-button" class="reg-submit-button">Register</button>
+                    </div>
+                </div-reg-form-div>
             </div>
-            <div-reg-form-div>
-                <input type="text" class="username" placeholder="username"  id="name">
-                <input type="text" class="email" placeholder="email"  id="email">
-                <input type="password" class="password" placeholder="password"  id="password">
-                <input type="password" class="repeat-password" placeholder="repeat password"  id="repeat-password">
-                <button id="reg-submit-button" class="reg-submit-button">Register</button>
-            </div-reg-form-div>
+            <div class="login-here">
+               <i> Already have an account? login <a href="login.html">here...</a> </i>
+            </div>
         </div>
         <div class="reg-right-main-body">
         </div>
