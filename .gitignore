@@ -7,3 +7,7 @@ virtual/
 .idea/
 .pytest_cache/
 .vscode/
+app/
+tests/
+.coverage
+README.md
