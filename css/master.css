@@ -791,3 +791,24 @@ a:hover {
 .number-of-questions-profile {
     margin-left: 100px;
 }
+
+@media (max-width: 410px) {
+    .delete-question-button  {
+        background-color: red;
+        border: 0 none;
+        border-radius: 8px;
+        color: #fff;
+        padding: 4px 5px;
+    }
+}
+
+@media (max-width: 410px) {
+    .update-question-button  {
+        background-color:#39f;
+        border: 0 none;
+        border-radius: 8px;
+        color: #fff;
+        padding: 4px 5px;
+    }
+}
+
