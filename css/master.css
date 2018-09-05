@@ -738,6 +738,7 @@ a:hover {
     border: 1px solid rgba(0, 0, 0, 0.1);
     margin-top: 55px;
     background-color: #e1ecf4;
+    min-width: 100%;
 }
 
 .h2-questions{
