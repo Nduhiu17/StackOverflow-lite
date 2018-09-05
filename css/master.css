@@ -37,6 +37,7 @@ html {
 p.p-logo {
     font-size: 18px;
     color: #fff;
+    min-width: 156px;
 }
 
 .login-header{
@@ -275,7 +276,7 @@ middle-body-main {
 
 
 p.p-footer-home {
-    padding-top: 10px;
+    padding-top: 4px;
 }
 
 .auto {
@@ -716,6 +717,7 @@ a:hover {
 
 .logo-header {
     margin-left: 35px;
+    
 }
 
 .r-button{
@@ -811,4 +813,17 @@ a:hover {
         padding: 4px 5px;
     }
 }
+
+@media (max-width: 837px) {
+    .user-details-profile{
+        min-width: 117%;
+    }
+}
+
+@media (max-width: 433px) {
+    .user-details-profile{
+        min-width: 117%;
+    }
+}
+
 
